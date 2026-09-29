@@ -1,0 +1,20 @@
+name: SettingsGUI
+version: 1.0.0
+main: dev.smp.settings.SettingsPlugin
+api-version: '1.21'
+description: Clean per-player settings GUI (/settings) inspired by DonutSMP.
+commands:
+  settings:
+    description: Open your personal settings menu
+    aliases: [setting]
+    permission: settings.use
+permissions:
+  settings.use:
+    description: Use /settings
+    default: true
+  settings.admin:
+    description: Reload the plugin config
+    default: op
+  settings.bypass.msg:
+    description: Message players even if they disabled private messages
+    default: op

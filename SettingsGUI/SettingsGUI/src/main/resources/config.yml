@@ -1,0 +1,24 @@
+# Title of the GUI (MiniMessage format)
+gui-title: "<dark_gray>Settings"
+
+mob-spawning:
+  # Mobs only stop spawning if EVERY player within this many blocks has Mob Spawning disabled.
+  radius: 64
+  # true = only hostile mobs are blocked, false = all natural spawns are blocked
+  hostile-only: false
+  # also block mob spawner spawns
+  include-spawners: false
+
+# Per-setting options. "enabled: false" removes it from the GUI and the feature is inactive.
+# "default" is the value new players start with.
+settings:
+  mob_spawning:      { enabled: true, default: true }
+  private_messages:  { enabled: true, default: true }
+  public_chat:       { enabled: true, default: true }
+  death_messages:    { enabled: true, default: true }
+  join_leave_messages: { enabled: true, default: true }
+  advancement_messages: { enabled: true, default: true }
+  item_pickup:       { enabled: true, default: true }
+  night_vision:      { enabled: true, default: false }
+  clear_weather:     { enabled: true, default: false }
+  always_day:        { enabled: true, default: false }
